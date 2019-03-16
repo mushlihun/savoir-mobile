@@ -1,0 +1,7 @@
+{
+  "name": "SavoirMobile",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

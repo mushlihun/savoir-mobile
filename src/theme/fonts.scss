@@ -1,0 +1,28 @@
+/*
+ * Fonts application theme.
+ */
+
+$font-frutiger: "frutiger", sans-serif;
+$font-roboto: "roboto-regular", sans-serif;
+$font-dk: "dk-lemon", sans-serif;
+$font-merci: "merci-heart", sans-serif;
+$font-path: "/assets/fonts" !default;
+@font-face {
+  font-family: "frutiger";
+  src: url("#{$font-path}/Frutiger/frutiger.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "roboto-regular";
+  src: url("#{$font-path}/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "dk-lemon";
+  src: url("#{$font-path}/DK-Lemon-Yellow-Sun.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "merci-heart";
+  src: url("#{$font-path}/Roboto/Merci-Heart-Brush.ttf") format("truetype");
+}

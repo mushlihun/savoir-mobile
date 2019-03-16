@@ -1,0 +1,83 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Company</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <ion-list>
+        <ion-item>
+            <ion-label fixed>Company Name</ion-label>
+            <div item-content>
+                <span>{{company.companyName}}</span>
+            </div>
+        </ion-item>
+        <ion-item>
+            <ion-label fixed>Company Phone</ion-label>
+            <div item-content>
+                <span>{{company.companyPhone}}</span>
+            </div>
+        </ion-item>
+        <ion-item>
+            <ion-label fixed>Company Email</ion-label>
+            <div item-content>
+                <span>{{company.companyEmail}}</span>
+            </div>
+        </ion-item>
+        <ion-item>
+            <ion-label fixed>Branding Default Language</ion-label>
+            <div item-content>
+                <span>{{company.brandingDefaultLanguage}}</span>
+            </div>
+        </ion-item>
+        <ion-item>
+            <ion-label fixed>Branding Logo</ion-label>
+            <div item-content>
+                <span>{{company.brandingLogo}}</span>
+            </div>
+        </ion-item>
+        <ion-item>
+            <ion-label fixed>Branding Header Background Color</ion-label>
+            <div item-content>
+                <span>{{company.brandingHeaderBackgroundColor}}</span>
+            </div>
+        </ion-item>
+        <ion-item>
+            <ion-label fixed>Branding Header Text Color</ion-label>
+            <div item-content>
+                <span>{{company.brandingHeaderTextColor}}</span>
+            </div>
+        </ion-item>
+        <ion-item>
+            <ion-label fixed>Branding Header Hover Color</ion-label>
+            <div item-content>
+                <span>{{company.brandingHeaderHoverColor}}</span>
+            </div>
+        </ion-item>
+        <ion-item>
+            <ion-label fixed>Branding Search Background Img</ion-label>
+            <div item-content>
+                <span>{{company.brandingSearchBackgroundImg}}</span>
+            </div>
+        </ion-item>
+        <ion-item>
+            <ion-label fixed>Branding Search Text Color</ion-label>
+            <div item-content>
+                <span>{{company.brandingSearchTextColor}}</span>
+            </div>
+        </ion-item>
+        <ion-item>
+            <ion-label fixed>Branding Default Button Color</ion-label>
+            <div item-content>
+                <span>{{company.brandingDefaultButtonColor}}</span>
+            </div>
+        </ion-item>
+        <ion-item>
+            <ion-label fixed>Branding Login Background Img</ion-label>
+            <div item-content>
+                <span>{{company.brandingLoginBackgroundImg}}</span>
+            </div>
+        </ion-item>
+    </ion-list>
+
+    <button ion-button block (click)="open(company)">{{ 'EDIT_BUTTON' | translate }}</button>
+</ion-content>

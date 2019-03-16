@@ -1,0 +1,74 @@
+/*
+ * Application global variables.
+ */
+
+// Set Font Awesome font path
+$fa-font-path: "~@fortawesome/fontawesome-free-webfonts/webfonts";
+// ---------------------------------------------------------------------------
+// Bootstrap variables
+//
+// Override Bootstrap variables here to suite your theme.
+// Copy variables you want to customize from node_modules/bootstrap/scss/_variables.scss
+//
+// Color system
+//
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #868e96;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+$frutiger: #4a4a4a;
+$frutiger-title: #384068;
+$frutiger-light: #0567bd;
+$frutiger-sub: #9b9b9b;
+$frutiger-text: #e83e8c;
+$frutiger-heart: #d0021b;
+$frutiger-tab: #5e5e5e;
+$frutiger-box: #fefefe;
+$frutiger-search: #090a0b;
+$frutiger-sidebar: #1b4178;
+$frutiger-sun: #eea112;
+$red: #d0021b;
+$orange: #f5a623;
+$yellow: #ffc107;
+$blue: #4a90e2;
+$green: #7ed321;
+$cyan: #17a2b8;
+$theme-colors: (
+  primary: $frutiger,
+  primaryLight: $frutiger-light,
+  title: $frutiger-title,
+  secondary: $frutiger-text,
+  heart: $frutiger-heart,
+  button: $white,
+  session: $frutiger-sun,
+  subtitle: $frutiger-sub,
+  listBox: $frutiger-box,
+  sidebar: $frutiger-sidebar,
+  search: $frutiger-search,
+  tabular: $frutiger-tab,
+  success: $green,
+  info: $cyan,
+  warning: $yellow,
+  danger: $red,
+  light: $gray-200,
+  dark: $gray-800,
+  semidark: $gray-700,
+  primaryOrange: $orange,
+  primaryRed: $red,
+  primaryBlue: $blue
+);
+// Import all custom fonts
+@import "./fonts.scss";
+// Use Bootstrap defaults for other variables, imported here so we can access all app variables in one place when used
+// in components.
+// Use Primeng Theme
+@import "~primeicons/primeicons.css";
+@import "~primeng/resources/themes/nova-light/theme.css";
+@import "~primeng/resources/primeng.min.css";

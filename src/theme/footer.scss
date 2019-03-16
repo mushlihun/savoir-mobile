@@ -1,0 +1,29 @@
+/*
+ * Footer application theme.
+ */
+
+#footer {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  a {
+    color: map-get($theme-colors, sidebar);
+    font-weight: bold;
+  }
+  ul {
+    &.list-group {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    li {
+      border: none;
+      display: inline-block;
+    }
+  }
+  p {
+    text-align: center;
+    font-size: 14px;
+    color: map-get($theme-colors, sidebar);
+  }
+}

@@ -1,0 +1,367 @@
+/*
+ * _Media screen application theme.
+ */
+
+@media only screen and (max-width: 768px) {
+  /* For ipad: */
+  body {
+    .ui-datepicker {
+      font-size: 1.4rem;
+      table {
+        font-size: 14px;
+        td {
+          > a {
+            padding: 10px 12px;
+          }
+        }
+      }
+    }
+  }
+  [class*="col-"] {
+    width: 100%;
+  }
+  .row {
+    margin-bottom: 0;
+  }
+  .btn-take {
+    position: absolute;
+    top: -12px;
+    left: 0;
+  }
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+  .detail-title {
+    h2 {
+      font-size: 30px !important;
+    }
+  }
+  .view-all {
+    a {
+      color: map-get($theme-colors, primaryLight);
+    }
+  }
+  .login-box {
+    padding: 25% 0;
+    .card-body {
+      padding: 0;
+    }
+  }
+  .more-item {
+    &.detail {
+      margin-bottom: 0;
+      margin-top: -5px;
+      position: relative;
+      top: -5px;
+      float: right;
+    }
+  }
+  .list-title {
+    &.detail {
+      line-height: normal;
+      .thumbup {
+        top: -10px;
+        right: 1.4rem;
+      }
+    }
+  }
+  .super-title {
+    font-size: 2.4rem !important;
+  }
+  .filter-top {
+    line-height: 2rem;
+    font-size: 24px;
+    margin-top: 30px;
+  }
+  .d-inline-block {
+    width: 100%;
+    margin: 15px 0;
+  }
+  .wrap-calendar {
+    padding-right: 0;
+  }
+  .main-calendar {
+    padding-right: 15px;
+  }
+  ngb-datepicker {
+    font-size: 1.4rem;
+    .ngb-dp-header {
+      padding: 15px 0px;
+      margin-bottom: 0;
+      font-size: 1.4rem;
+    }
+    .ngb-dp-month {
+      .ngb-dp-weekday {
+        font-size: 1.4rem;
+      }
+    }
+    .ngb-dp-month {
+      .ngb-dp-weekday {
+        padding-bottom: 0px;
+      }
+      .ngb-dp-day,
+      .ngb-dp-week-number,
+      .ngb-dp-weekday {
+        padding: 0.8rem 0;
+      }
+    }
+  }
+  #content {
+    padding-top: 6.5rem;
+    .border-right {
+      border: none !important;
+    }
+    .logo {
+      padding-left: 30px;
+      span {
+        left: 75px;
+      }
+    }
+    .status-bar {
+      margin-top: 20px;
+    }
+    .content-detail {
+      .detail-item {
+        &#watch,
+        &#listen {
+          height: 200px;
+          min-height: 200px;
+        }
+      }
+    }
+    .container-fluid {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .search-header {
+      width: 100%;
+      margin-top: 20px;
+    }
+    .header-image {
+      margin-top: -1rem;
+      height: 285px;
+      .title {
+        font-size: inherit;
+        line-height: normal;
+        .title-text {
+          font-size: 28px;
+        }
+      }
+    }
+    .detail-list {
+      h2 {
+        font-size: 26px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+      .tab-detail {
+        font-size: 16px;
+        padding: 0px 12px 12px 12px;
+      }
+      .list-group {
+        .list-group-item {
+          .card-desc {
+            padding-right: 0;
+          }
+          span.card-status {
+            position: initial;
+            width: 100%;
+            display: inline-block;
+            padding: 8px 0;
+            text-align: center;
+            background: map-get($theme-colors, light);
+          }
+          .course {
+            margin-bottom: 20px;
+          }
+          .button-course {
+            position: relative;
+            .btn {
+              float: none;
+              text-align: center;
+              position: relative;
+              width: 48%;
+              top: 0;
+              &:first-child {
+                margin-right: 0;
+              }
+              &:last-child {
+                margin-right: 0;
+                float: right;
+              }
+            }
+          }
+          .list-title {
+            &.detail {
+              height: auto;
+              margin: 30px auto;
+            }
+          }
+        }
+      }
+    }
+    .player-list {
+      .list-group {
+        max-height: 350px;
+        .list-group-item {
+          .card-desc {
+            margin-left: 0;
+            height: 75px;
+            .more-item {
+              right: 0;
+            }
+          }
+          .card-img {
+            max-height: 225px;
+            width: 100%;
+          }
+          span {
+            top: 35px;
+          }
+        }
+      }
+    }
+    .list-grid {
+      .list-group {
+        max-height: 100%;
+      }
+      .list-wrap {
+        .nav-tabs {
+          position: relative;
+        }
+        h2 {
+          font-size: 34px;
+        }
+      }
+    }
+    .wrap-calendar {
+      &.big {
+        .desc-calendar {
+          .card-text {
+            font-size: inherit;
+            padding: 0;
+          }
+          .card-owner {
+            font-size: smaller;
+          }
+        }
+        .btn-absolute {
+          position: inherit;
+          margin-top: 20px;
+          padding-top: 10px;
+          border-top: 1px solid map-get($theme-colors, listBox);
+          text-align: right;
+        }
+        .card-progress {
+          font-size: 14px;
+          float: left;
+          margin-top: 5px;
+          span {
+            font-size: 18px;
+          }
+        }
+        .btn-main {
+          padding: 5px 12px;
+          font-size: 14px;
+        }
+        .expand-detail {
+          padding-left: 0;
+          padding-right: 0;
+          h2 {
+            font-size: 22px !important;
+          }
+          .card-desc {
+            padding-right: 0;
+          }
+          .card-status {
+            position: initial;
+            margin-top: 1.8rem;
+            padding-bottom: 25px;
+          }
+        }
+      }
+    }
+    .event-calendar {
+      .list-calendar {
+        .title {
+          font-size: 1.6rem;
+        }
+      }
+    }
+    .centre-wrapper {
+      display: block;
+      text-align: center;
+      .photo {
+        width: 100%;
+        display: block;
+        margin: 0 auto 20px auto;
+      }
+      .points {
+        width: 100%;
+        display: block;
+        width: 150px;
+        height: 150px;
+        margin: 30px auto 0 auto;
+        padding-top: 30px;
+      }
+      ul {
+        &.list-course {
+          .total-course {
+            display: block;
+            padding-left: 0;
+            font-size: 1rem;
+          }
+          .desc-course {
+            text-align: left;
+          }
+        }
+        &.horizontal {
+          display: inline-block;
+          width: auto;
+          padding: 0 10px;
+          li {
+            padding: 0 10px;
+          }
+        }
+      }
+    }
+  }
+  #sidebar {
+    .search-header {
+      margin: 0 30px;
+    }
+    .sidebar-wrapper {
+      button {
+        height: 80px;
+        top: 5px;
+        i {
+          font-size: 20px;
+          margin-left: -20px;
+        }
+      }
+      &.show {
+        min-width: 100%;
+        max-width: 100%;
+        border-radius: 0;
+        button {
+          right: -15px;
+          background: transparent;
+        }
+      }
+    }
+    ul {
+      .sub-menu {
+        &.show {
+          height: 100px;
+        }
+      }
+    }
+  }
+  #footer {
+    ul {
+      li {
+        width: 100%;
+      }
+    }
+  }
+}

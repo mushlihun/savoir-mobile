@@ -1,0 +1,23 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Audience</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <ion-list>
+        <ion-item>
+            <ion-label fixed>Audience Name</ion-label>
+            <div item-content>
+                <span>{{audience.audienceName}}</span>
+            </div>
+        </ion-item>
+        <ion-item>
+            <ion-label>Company</ion-label>
+            <div item-content *ngIf="audience.company">
+                <a>{{audience.company?.id}}</a>
+            </div>
+        </ion-item>
+    </ion-list>
+
+    <button ion-button block (click)="open(audience)">{{ 'EDIT_BUTTON' | translate }}</button>
+</ion-content>

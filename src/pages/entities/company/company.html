@@ -1,0 +1,46 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Companies</ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only (click)="open()">
+                <ion-icon name="add"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+<!-- todo: add elasticsearch support -->
+<ion-content padding>
+    <ion-refresher (ionRefresh)="loadAll($event)">
+        <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
+
+    <ion-list>
+        <ion-item-sliding *ngFor="let company of companies; trackBy: trackId" #slidingItem>
+            <button ion-item (click)="detail(company)">
+                <p>{{company.companyName}}</p>
+                <p>{{company.companyPhone}}</p>
+                <p>{{company.companyEmail}}</p>
+                <p>{{company.brandingDefaultLanguage}}</p>
+                <p>{{company.brandingLogo}}</p>
+                <p>{{company.brandingHeaderBackgroundColor}}</p>
+                <p>{{company.brandingHeaderTextColor}}</p>
+                <p>{{company.brandingHeaderHoverColor}}</p>
+                <p>{{company.brandingSearchBackgroundImg}}</p>
+                <p>{{company.brandingSearchTextColor}}</p>
+                <p>{{company.brandingDefaultButtonColor}}</p>
+                <p>{{company.brandingLoginBackgroundImg}}</p>
+            </button>
+            <ion-item-options>
+                <button ion-button color="primary" (click)="open(slidingItem, company)">
+                    {{ 'EDIT_BUTTON' | translate }}
+                </button>
+                <button ion-button color="danger" (click)="delete(company)">
+                    {{ 'DELETE_BUTTON' | translate }}
+                </button>
+            </ion-item-options>
+        </ion-item-sliding>
+    </ion-list>
+    <ion-item *ngIf="!companies?.length">
+        No Companies found.
+    </ion-item>
+</ion-content>

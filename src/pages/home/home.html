@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Welcome, {{account?.firstName}}!
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="logout()" id="logout">
+        Logout
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <p>{{ 'WELCOME_INTRO' | translate }}</p>
+  <vg-player>
+      <video #myMedia
+              [vgHls]="'https://live-tech.circledoo.com/live/bfi294/playlist.m3u8'"
+              id="my-video"
+              type="application/x-mpegURL"
+              controls>
+      </video>
+  </vg-player>    
+</ion-content>

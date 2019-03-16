@@ -1,0 +1,944 @@
+/*
+ * Content application theme.
+ */
+
+#content {
+  padding-top: 11rem;
+  .container-fluid {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .navbar-brand {
+    margin-left: 0.8rem;
+  }
+  .border-right {
+    border-right: 1px solid map-get($theme-colors, frutiger) !important;
+  }
+  // calendar primeng style
+  .select-calendar {
+    span {
+      padding: 8px;
+      &.yellow {
+        background-color: #fff200;
+        color: map-get($theme-colors, button);
+      }
+      &.lightorange {
+        background-color: #f7941e;
+        color: map-get($theme-colors, button);
+      }
+      &.orange {
+        background-color: #f15a29;
+        color: map-get($theme-colors, button);
+      }
+      &.red {
+        background-color: #ed1c24;
+        color: map-get($theme-colors, button);
+      }
+      &.blue {
+        background-color: #1c75bc;
+        color: map-get($theme-colors, button);
+      }
+      &.lightgreen {
+        background-color: #39b54a;
+        color: map-get($theme-colors, button);
+      }
+      &.lightpurple {
+        background-color: #92278f;
+        color: map-get($theme-colors, button);
+      }
+      &.green {
+        background-color: #006838;
+        color: map-get($theme-colors, button);
+      }
+      &.purple {
+        background-color: #662d91;
+        color: map-get($theme-colors, button);
+      }
+      &.pink {
+        background-color: #ee2a7b;
+        color: map-get($theme-colors, button);
+      }
+      &.weekend {
+        color: map-get($theme-colors, primaryRed);
+      }
+    }
+  }
+  .event-calendar {
+    a {
+      color: map-get($theme-colors, primaryLight);
+      font-weight: bold;
+    }
+    li {
+      margin-bottom: 40px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .addto {
+      text-align: right;
+      margin-top: 15px;
+    }
+    .list-calendar {
+      color: map-get($theme-colors, button);
+      background-color: map-get($theme-colors, listBox);
+      padding: 12px;
+      text-align: right;
+      border-radius: 10px;
+      &.yellow {
+        background-color: #fff200;
+        color: map-get($theme-colors, button);
+      }
+      &.lightorange {
+        background-color: #f7941e;
+        color: map-get($theme-colors, button);
+      }
+      &.orange {
+        background-color: #f15a29;
+        color: map-get($theme-colors, button);
+      }
+      &.red {
+        background-color: #ed1c24;
+        color: map-get($theme-colors, button);
+      }
+      &.blue {
+        background-color: #1c75bc;
+        color: map-get($theme-colors, button);
+      }
+      &.lightgreen {
+        background-color: #39b54a;
+        color: map-get($theme-colors, button);
+      }
+      &.lightpurple {
+        background-color: #92278f;
+        color: map-get($theme-colors, button);
+      }
+      &.green {
+        background-color: #006838;
+        color: map-get($theme-colors, button);
+      }
+      &.purple {
+        background-color: #662d91;
+        color: map-get($theme-colors, button);
+      }
+      &.pink {
+        background-color: #ee2a7b;
+        color: map-get($theme-colors, button);
+      }
+      .type {
+        text-align: left;
+        float: left;
+        padding: 8px 15px;
+        font-size: 18px;
+      }
+      .title {
+        font-size: 2rem;
+      }
+      .date {
+        font-size: 18px;
+        margin-top: 18px;
+        padding-bottom: 4px;
+      }
+    }
+  }
+  .wrap-calendar {
+    .custom {
+      max-width: 130px;
+      margin-right: -10px;
+    }
+    &.big {
+      li {
+        margin-bottom: 22px !important;
+      }
+      max-height: 100% !important;
+      .card-calendar {
+        font-size: 40px;
+        width: 120px;
+        height: 80px;
+        span {
+          font-size: 26px;
+        }
+      }
+      .desc-calendar {
+        .card-text {
+          font-size: 30px;
+          padding: 8px 0;
+        }
+        .card-owner {
+          font-size: 16px;
+        }
+      }
+      .card-progress {
+        margin-bottom: 10px;
+        span {
+          font-size: 22px;
+          padding-left: 12px;
+        }
+      }
+      .btn-absolute {
+        top: 20px;
+        right: 30px;
+      }
+      .expand-detail {
+        padding: 20px 20px 0px 20px;
+        margin-top: 10px;
+        h2 {
+          color: map-get($theme-colors, button) !important;
+          font-size: 28px !important;
+        }
+        .subtitle {
+          color: map-get($theme-colors, button) !important;
+          margin-top: 0;
+        }
+        .main-title {
+          margin-bottom: 20px;
+        }
+        .watching {
+          color: map-get($theme-colors, session);
+          right: 0;
+          position: absolute;
+          font-size: 20px;
+        }
+        .card-status {
+          i {
+            margin-right: 10px;
+          }
+        }
+        .card-img {
+          min-height: 175px;
+          max-height: 175px;
+        }
+      }
+    }
+  }
+  .card-calendar {
+    background-color: map-get($theme-colors, button);
+    border-radius: 8px;
+    font-size: 34px;
+    font-weight: bold;
+    font-family: $font-roboto;
+    color: map-get($theme-colors, primaryLight);
+    text-align: center;
+    padding: 14px 0px;
+    line-height: 1em;
+    vertical-align: middle;
+    display: table-cell;
+    width: 90px;
+    height: 80px;
+    span {
+      font-size: 22px;
+      display: block;
+      font-weight: normal;
+      line-height: 1em;
+    }
+  }
+  .card-owner {
+    font-size: 13px;
+    color: map-get($theme-colors, listBox);
+    position: absolute;
+    bottom: 5px;
+  }
+  .card {
+    .card-body {
+      &.absolute {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+        position: absolute !important;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    &:before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-color: map-get($theme-colors, button);
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+    }
+    &:hover {
+      &:before {
+        opacity: 0.3;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+    a {
+      &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: map-get($theme-colors, button);
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+    &:hover {
+      a {
+        &:before {
+          opacity: 0.3;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+  .search-header {
+    font-size: 17px;
+    font-family: $font-roboto;
+    border-radius: 50px;
+    width: 500px;
+    padding: 0px 30px;
+    background: #ffffffad;
+    border: none;
+    &::placeholder {
+      /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: map-get($theme-colors, search);
+      opacity: 1;
+      /* Firefox */
+    }
+    &:-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: map-get($theme-colors, search);
+    }
+    &::-ms-input-placeholder {
+      /* Microsoft Edge */
+      color: map-get($theme-colors, search);
+    }
+  }
+  .status-bar {
+    color: map-get($theme-colors, primaryLight);
+    margin-top: -55px;
+    margin-bottom: 12px;
+    font-size: 20px;
+    .progress-number {
+      font-size: 30px;
+      padding-right: 12px;
+    }
+  }
+  .header-image {
+    background-color: map-get($theme-colors, search);
+    margin-top: -2.2rem;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      opacity: 0.5;
+    }
+    .title {
+      position: absolute;
+      top: 0;
+      color: map-get($theme-colors, button);
+      font-size: 24px;
+      line-height: 2rem;
+      .title-text {
+        font-size: 48px;
+        margin: 25px 0;
+      }
+    }
+  }
+  .list-grid {
+    .tab-home {
+      text-align: center;
+      line-height: 1.5rem;
+      color: map-get($theme-colors, subtitle);
+      display: grid;
+      i {
+        background-color: map-get($theme-colors, subtitle);
+        color: map-get($theme-colors, button);
+        cursor: pointer;
+        font-size: 21px;
+        width: 40px;
+        height: 40px;
+        margin: 0 auto;
+        border-radius: 50%;
+        vertical-align: middle;
+        position: relative;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          background-color: map-get($theme-colors, primaryLight);
+          transition: all 0.3s ease-in-out;
+        }
+        &:before {
+          top: 9px;
+          position: absolute;
+          left: 0;
+          right: 0;
+        }
+        &.no-icon {
+          background-color: transparent;
+          &:hover {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+    .nav-tabs {
+      border-bottom: none;
+      .nav-link {
+        padding: 0.5rem 0.7rem;
+        border: none;
+        &:hover {
+          border: none;
+        }
+        &.active {
+          border: none;
+          i {
+            background-color: map-get($theme-colors, primaryLight);
+          }
+          span {
+            color: map-get($theme-colors, primaryLight);
+          }
+          .tab-home {
+            i {
+              &.no-icon {
+                background-color: transparent;
+                &:hover {
+                  background-color: transparent;
+                }
+              }
+            }
+          }
+        }
+        span {
+          color: map-get($theme-colors, subtitle);
+        }
+      }
+    }
+    .list-wrap {
+      position: relative;
+      .nav-tabs {
+        position: absolute;
+        top: 0;
+        right: 0px;
+      }
+      h2 {
+        margin-bottom: 8px;
+      }
+    }
+    .card-img {
+      min-height: 225px;
+      max-height: 225px;
+      object-fit: cover;
+    }
+    .card-img-big {
+      min-height: 325px;
+      max-height: 325px;
+      object-fit: cover;
+    }
+    .container {
+      margin: 0;
+      padding: 0;
+      max-width: 100%;
+    }
+    h2 {
+      color: map-get($theme-colors, primaryLight);
+      font-size: 46px;
+      font-family: $font-frutiger;
+    }
+    h3 {
+      color: map-get($theme-colors, primaryLight);
+      font-size: 34px;
+    }
+    .card {
+      border: none;
+      .card-title {
+        font-family: $font-roboto;
+        font-size: 20px;
+        font-weight: 600;
+        color: map-get($theme-colors, primary);
+        &.library {
+          color: map-get($theme-colors, button);
+          font-size: 24px;
+        }
+        &.text-shadow {
+          text-shadow: 1px 3px 5px map-get($theme-colors, semidark);
+        }
+      }
+      .card-body {
+        padding: 20px 0;
+        position: relative;
+        .card-desc {
+          float: left;
+        }
+        .card-others {
+          position: absolute;
+          right: 0;
+          margin-top: 2px;
+          .more-item {
+            color: initial;
+            i {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+      .card-text {
+        font-size: 18px;
+        font-family: $font-frutiger;
+        color: map-get($theme-colors, subtitle);
+      }
+    }
+    .list-group {
+      // auto scroll if item > 2
+      // max-height: 225px;
+      overflow-y: auto;
+      overflow-x: hidden;
+      .list-group-item {
+        background-color: map-get($theme-colors, primaryLight);
+        color: map-get($theme-colors, listBox);
+        border: none;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        line-height: 1.4rem;
+        position: relative;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        [class*="col-"] {
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+        .row {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .view-all {
+    font-family: $font-roboto;
+    text-align: right;
+    padding-top: 0;
+    a {
+      font-size: 16px;
+      color: map-get($theme-colors, primaryLight);
+    }
+  }
+  .content-detail {
+    background-color: map-get($theme-colors, subtitle);
+    border: 1px solid map-get($theme-colors, subtitle);
+    position: relative;
+    overflow: hidden;
+    .detail-item {
+      width: 100%;
+      height: 425px;
+      min-height: 425px;
+      audio {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+      }
+      iframe,
+      video,
+      object,
+      embed {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+      }
+    }
+    #listen:target,
+    #learn:target,
+    #play:target,
+    #watch:target,
+    #read:target {
+      display: block;
+    }
+  }
+  .player-list {
+    .row {
+      margin-bottom: 0;
+    }
+    [class*="col-"] {
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+    ul {
+      &.nav-tabs {
+        margin-bottom: 15px;
+        position: relative !important;
+        top: 0 !important;
+        border-bottom: 1px solid #bebebe;
+      }
+      li {
+        &.nav-item {
+          width: 33.3%;
+          font-size: 15px;
+        }
+        a {
+          padding-bottom: 5px;
+          padding: 0 !important;
+          &.active {
+            border-bottom: 2.5px solid map-get($theme-colors, primaryLight) !important;
+          }
+        }
+        &:first-child {
+          .tab-home {
+            text-align: left;
+          }
+        }
+        &:last-child {
+          .tab-home {
+            text-align: right;
+          }
+        }
+      }
+    }
+    h2 {
+      font-size: 32px;
+      color: map-get($theme-colors, title) !important;
+    }
+    .list-group {
+      max-height: 350px;
+      overflow-y: auto;
+      overflow-x: hidden;
+      .list-group-item {
+        background-color: transparent;
+        color: map-get($theme-colors, title) !important;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 0;
+        margin-bottom: 25px;
+        .card-desc {
+          margin-left: 35px;
+          padding-right: 20px;
+          position: relative;
+          height: 95px;
+          .more-item {
+            position: absolute;
+            right: 10px;
+            top: 0;
+            i {
+              color: inherit;
+            }
+          }
+        }
+        .card-img {
+          min-height: auto;
+          max-height: 95px;
+          width: 150px;
+        }
+        .card-text {
+          font-size: 15px;
+        }
+        span {
+          position: absolute;
+          bottom: 0;
+        }
+        i {
+          color: map-get($theme-colors, primaryLight);
+          font-size: 1.1rem;
+        }
+      }
+    }
+    .no-data {
+      margin-top: 0;
+    }
+  }
+  .detail-list {
+    h2 {
+      font-size: 30px;
+      color: map-get($theme-colors, title) !important;
+    }
+    .row {
+      margin-bottom: 0;
+    }
+    [class*="col-"] {
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+    ul {
+      &.nav-tabs {
+        margin-top: 15px;
+        margin-bottom: 30px;
+        position: relative !important;
+        top: 0 !important;
+        border-bottom: 1px solid #bebebe;
+      }
+      li {
+        &.nav-item {
+          font-size: 15px;
+        }
+        a {
+          color: map-get($theme-colors, sidebar);
+          padding-bottom: 5px;
+          padding: 0 !important;
+          &.active {
+            border-bottom: 3px solid map-get($theme-colors, primaryLight) !important;
+          }
+        }
+        &:first-child {
+          .tab-home {
+            text-align: left;
+          }
+        }
+        &:last-child {
+          .tab-home {
+            text-align: right;
+          }
+        }
+      }
+    }
+    .card-desc {
+      padding-right: 20px;
+      position: relative;
+      height: 100%;
+    }
+    .card-img {
+      min-height: auto;
+      max-height: 295px;
+      width: 100%;
+    }
+    .course {
+      font-weight: normal;
+      .desc {
+        display: block;
+        padding: 20px 0;
+        height: 85px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+      }
+    }
+    span {
+      &.card-status {
+        font-size: 18px;
+        bottom: 5px;
+        position: absolute;
+        display: inline-block;
+        width: 100%;
+      }
+    }
+    i {
+      font-size: 1.1rem;
+    }
+    .list-title {
+      &.detail {
+        height: 100%;
+      }
+    }
+    .button-course {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      .btn {
+        margin-right: 15px;
+        float: left;
+      }
+      a {
+        color: map-get($theme-colors, button);
+      }
+    }
+    .list-group {
+      max-height: 100%;
+      overflow: hidden;
+      .list-group-item {
+        background-color: transparent;
+        color: map-get($theme-colors, title) !important;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 0;
+        margin-bottom: 40px;
+      }
+    }
+    .nav-tabs {
+      .nav-link {
+        i {
+          background-color: transparent;
+          color: map-get($theme-colors, subtitle);
+          padding-right: 8px;
+        }
+        &.active {
+          i {
+            background-color: transparent;
+            color: map-get($theme-colors, primaryLight);
+          }
+        }
+      }
+    }
+    .tab-detail {
+      font-size: 22px;
+      padding: 0px 20px 12px 20px;
+    }
+    .no-data {
+      margin-top: 0;
+    }
+  }
+  .table-list {
+    color: map-get($theme-colors, subtitle);
+    a {
+      color: map-get($theme-colors, primaryLight);
+    }
+    th {
+      background-color: map-get($theme-colors, primaryLight);
+      padding: 20px 12px;
+      color: map-get($theme-colors, button);
+      &:first-child {
+        border-radius: 10px 0 0 10px;
+      }
+      &:last-child {
+        border-radius: 0 10px 10px 0;
+      }
+    }
+  }
+  .icon-table {
+    text-align: center;
+    i {
+      background-color: map-get($theme-colors, subtitle);
+      color: map-get($theme-colors, button);
+      font-size: 20px;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      border-radius: 50%;
+      &:before {
+        position: relative;
+        top: calc(50% - 10px);
+      }
+    }
+    span {
+      display: inline-block;
+      width: 100%;
+      margin: 8px 0;
+    }
+  }
+  .centre-wrapper {
+    display: table;
+    width: 100%;
+    .photo {
+      width: 30%;
+      position: relative;
+      vertical-align: middle;
+      display: table-cell;
+      img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+      }
+    }
+    .info {
+      width: 40%;
+      position: relative;
+      vertical-align: middle;
+      display: table-cell;
+      .title {
+        font-size: 30px;
+      }
+      .subtitle {
+        font-size: 16px;
+        display: block;
+        margin-top: 3px;
+      }
+      .field {
+        margin-top: 15px;
+      }
+    }
+    .points {
+      font-size: 3rem;
+      padding-top: 12px;
+      text-align: center;
+      position: relative;
+      vertical-align: middle;
+      display: table-cell;
+      &.circle {
+        border: 4px solid map-get($theme-colors, primaryLight);
+      }
+      small {
+        font-size: 30%;
+      }
+      .subtitle {
+        color: map-get($theme-colors, primaryLight);
+        font-size: 14px;
+      }
+    }
+    ul {
+      &.list-course {
+        display: inline-block;
+        width: 100%;
+        margin: 12px 0;
+        li {
+          display: table-cell;
+          width: 25%;
+        }
+        .list {
+          line-height: 1.5rem;
+          display: table-cell;
+          vertical-align: middle;
+          i {
+            background-color: map-get($theme-colors, primaryLight);
+          }
+          span {
+            display: block;
+          }
+        }
+        .total-course {
+          color: map-get($theme-colors, primaryLight);
+          display: table-cell;
+          vertical-align: middle;
+          padding-left: 12px;
+          font-size: 1.4rem;
+          font-weight: bold;
+        }
+        .desc-course {
+          display: table-cell;
+          vertical-align: middle;
+          padding-left: 15px;
+          font-size: 1.15rem;
+          &.big {
+            font-size: 1.4rem;
+          }
+          span {
+            display: block;
+            margin-top: 12px;
+            font-size: 1rem;
+            text-align: right;
+            &.status {
+              color: map-get($theme-colors, primaryLight);
+            }
+          }
+          small {
+            font-size: 14px;
+            display: inline-block;
+            width: 100%;
+          }
+        }
+      }
+      &.no-cell {
+        li {
+          display: inline-block;
+          width: 100%;
+          margin-bottom: 12px;
+        }
+      }
+    }
+    .btn-default {
+      margin: 12px 0;
+    }
+  }
+  .course-wrapper {
+    h3 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+    h4 {
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+    .view-all {
+      padding-top: 12px;
+      padding-bottom: 15px !important;
+    }
+  }
+}
